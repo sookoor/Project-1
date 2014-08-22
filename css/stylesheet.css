@@ -15,22 +15,18 @@
 
 #header ul {
     margin: 0;
-    padding: 0;
+    padding-top: 5px;
 }
 
 #header ul li {
     list-style-type: none;
     display: inline;
-    margin-right: 10px;
     color: white;
+    padding: 0 10px 0 10px;
 }
 
-#header li:before {
-    content: " | ";
-}
-
-#header li:first-child:before {
-    content: none;
+#header li~li {
+    border-left: 1px solid black;
 }
 
 #nav {
@@ -50,13 +46,15 @@
 }
 
 #nav li:last-child {
-    height: 31em;
+    height: 435px;
     background-color: #d1d4d7;
     padding: 15px 0 0 3px;
 }
 
 h1 {
     letter-spacing: 2px;
+    font-weight: bold;
+    clear: both;
 }
 
 .black {
@@ -109,3 +107,44 @@ h1 {
 #body p.no-right-margin {
     margin-right: 0px;
 }
+
+#body hr {
+    height: 7px;
+    border: 0;
+    /* Set the hr color */
+    background-color: #336699;
+}
+
+#quote {
+    float: right;
+    width: 130px;
+    color: #336699;
+    font-family: serif;
+    font-weight: bold;
+    margin: 10px 10px 0 0;
+}
+
+#float-left {
+    margin: -75px 0 20px 0;
+    float: left;
+}
+
+#footer ul {
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+
+#footer ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 10px 0 10px;
+    color: #336699;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#footer li~li {
+    border-left: 1px solid #336699;
+}
+
+
