@@ -1,0 +1,94 @@
+/* CSS Styles */
+
+/* Clear away any default formatting that would mess up custom styling. */
+@import url("reset.css");
+
+#header {
+    background-color: #336699;
+    width: 743px;
+    height: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin: 7px 0 0 6px;
+    text-align: right;
+}
+
+#header li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: white;
+}
+
+#nav {
+    margin: 1px 0 0 5px;
+    float: left;
+}
+
+#nav li {
+    text-decoration: none;
+    color: white;
+    background-color: #336699;
+    display: block;
+    width: 8.7em;
+    height:1.3em;
+    border: 1px solid white;
+    padding: 5px 0 0 3px;
+}
+
+#nav li:last-child {
+    height: 31em;
+    background-color: #d1d4d7;
+    padding: 15px 0 0 3px;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+.black {
+    color: black;
+}
+
+.gray {
+    color: #666666;
+}
+
+.gold {
+    color: #b29b35;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.double-space {
+    line-height: 200%;
+}
+
+#banner {
+    margin-top:2px;
+    float: left;
+}
+
+#left {
+    padding: 0 10px 15px 15px;
+    font-size: 13px;
+}
+
+#body {
+    position: absolute;
+    margin: 256px 0 0 149px;
+    width: 600px;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+}
+
+#body h1 {
+    margin: 35px 0 23px 27px;
+}
+
+#body p {
+    margin: 10px 180px 0 27px;
+    font-size: 13px;
+}
