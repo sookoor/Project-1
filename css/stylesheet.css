@@ -13,11 +13,24 @@
     text-align: right;
 }
 
-#header li {
-    display: inline-block;
-    vertical-align: middle;
+#header ul {
+    margin: 0;
+    padding: 0;
+}
+
+#header ul li {
+    list-style-type: none;
+    display: inline;
     margin-right: 10px;
     color: white;
+}
+
+#header li:before {
+    content: " | ";
+}
+
+#header li:first-child:before {
+    content: none;
 }
 
 #nav {
@@ -78,7 +91,7 @@ h1 {
 
 #body {
     position: absolute;
-    margin: 256px 0 0 149px;
+    margin: 210px 0 0 149px;
     width: 600px;
     font-family: Arial, sans-serif;
     background-color: #eeeeee;
@@ -91,4 +104,8 @@ h1 {
 #body p {
     margin: 10px 180px 0 27px;
     font-size: 13px;
+}
+
+#body p.no-right-margin {
+    margin-right: 0px;
 }
